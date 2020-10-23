@@ -88,18 +88,12 @@ img.social:hover {
     height: 25em;
 }
 
-.coachdan {
+img.coachdan {
     position: absolute;
-    display: flex;
-    flex-direction: column;
     top: 2.3em;
     left: 34%;
-    z-index: 2;
-}
-
-.coachdan img {
-    position: absolute;
     height: 45em;
+    z-index: 2;
 }
 
 .side-menu {
@@ -130,7 +124,6 @@ img.social:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 17.5em; */
     margin-top: 35em;
     width: 100%;
     z-index: 3;
@@ -268,11 +261,10 @@ footer {
     height: 10em;
   }
 
-  .coachdan img {
-    height: 27em;
-    margin-left: 5em;
-    margin-top: 4.5em;
-    
+  img.coachdan {
+    top: 4em;
+    left: 17%;
+    height: 30em;
   }
 
   .lowerbuttons {
@@ -324,7 +316,7 @@ footer {
   }
 
   main {
-    min-height: 80vh;
+    max-height: 94vh;
   }
 
   #header {
@@ -405,12 +397,10 @@ footer {
     height: 10em;
   }
 
-  .coachdan {
-    top: 0;
-    left: 10%;
-  }
-  .coachdan img {
-    height: 27em;
+  img.coachdan {
+    top: 4em;
+    left: 17%;
+    height: 30em;
   }
 
   .lowerbuttons {
@@ -418,7 +408,7 @@ footer {
     margin-left: 0;
     margin-top: 0;
     width: 100%;
-    bottom: 2em;
+    bottom: 10em;
   }
 
   img.wckick_button {

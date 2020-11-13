@@ -19,11 +19,27 @@ a {
 }
 
 a:hover {
-    color: rgb(211, 233, 19);
+    color: #f9fd07;
 }
 
 a:visited {
-    color: rgb(247, 168, 168);
+    color: rgb(78, 119, 231);
+}
+
+li a {
+  padding: 14px 12px;
+}
+
+li a:hover {
+  background-color: #f9fd07;
+}
+
+li a:visited {
+  color: rgb(78, 119, 231);
+}
+
+.active {
+  background-color: #194c99;
 }
 
 main {

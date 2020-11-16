@@ -1,4 +1,4 @@
-function toggle(e) {
+function toggle() {
     // Declare variable menu
     let menu = document.getElementById("side-menu");
 
@@ -11,4 +11,4 @@ function toggle(e) {
     }
 }
 
-document.getElementById("ham-button").addEventListener("click", toggle);
+document.getElementById("ham-button").addEventListener("click", toggle());

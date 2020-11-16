@@ -84,7 +84,7 @@ img.social:hover {
   position: absolute;
   display: inline-block;
   margin-left: 10%;
-  margin-top: .4em;
+  margin-top: 0.4em;
   z-index: 21;
 }
 
@@ -101,9 +101,8 @@ img.social:hover {
 }
 
 #side-menu {
-  display: inline;
+  display: inline-block;
   margin: 0;
-  /* height: 4.4em; */
   width: 100%;
 }
 
@@ -118,7 +117,7 @@ img.social:hover {
   padding: 0;
   margin: 0;
   margin-right: 10%;
-  margin-top: .5em;
+  margin-top: 0.5em;
   text-align: right;
   list-style: none;
   overflow: hidden;
@@ -179,6 +178,30 @@ iframe {
   z-index: 1;
 }
 
+#familyContent {
+  width: 100%;
+  height: 125vh;
+}
+
+.familyContent {
+  margin-top: 5.9em;
+}
+.familyContent p {
+  width: 35.5em;
+  margin-top: 1em;
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.family-image {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dan-image {
   margin-top: 2em;
   margin-left: 23%;
@@ -213,7 +236,7 @@ iframe {
   display: inline;
   padding: 0;
   margin: 0;
-  margin-left: .7em;
+  margin-left: 0.7em;
   list-style: none;
   text-align: left;
 }
@@ -222,14 +245,14 @@ iframe {
   color: #fff bold;
   display: inline;
   padding-right: 1em;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .footer-para {
   display: inline-block;
-  font-size: .9em;
+  font-size: 0.9em;
   margin: 0;
-  margin-left: 24%;
+  margin-left: 15%;
   text-align: left;
 }
 
@@ -259,8 +282,9 @@ footer {
 } */
 
 /* screen size for smart phones */
-@media (max-width: 420px) {
-  html, body {
+@media (max-width: 499px) {
+  html,
+  body {
     overflow-x: hidden;
   }
 
@@ -295,13 +319,13 @@ footer {
   }
 
   #blueheader {
-    max-width: 100vw;
+    width: 100%;
     height: 2.5em;
   }
 
   .smallglobe {
     margin-left: 2%;
-    margin-top: .4em;
+    margin-top: 0.4em;
   }
 
   .smallglobe img {
@@ -310,19 +334,19 @@ footer {
 
   #side-menu {
     display: none;
-    width: 100%;
+    width: 100vw;
   }
 
-  /* .toggleLink {
-    max-width: 90vw;
-  } */
+  #button-href {
+    margin-left: 75%;
+    padding: 1.2px;
+  }
 
   #ham-button {
-    display: inline-flex;
-    border: none;
-    margin-left: 60em;
+    display: block;
+    margin-left: 75%;
+    margin-top: 0.2em;
     margin-right: 5%;
-    margin: 0;
     height: 0;
     width: 0;
     z-index: 20;
@@ -338,48 +362,40 @@ footer {
   }
 
   img.ham-button {
-    margin-left: 19em;
-    margin-right: 5%;
     height: 3em;
-    border: none;
-    z-index: inherit;
+    z-index: 20;
   }
 
-  /* Side Menu Container */
-  .side-menu {
-    left: 0;
-    line-height: 1em;
+  div#side-menu.side-menu {
+    margin-left: -21em;
+    float: none;
+    line-height: 1.2em;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 3em;
-    width: 100vw;
-  }
-
-  /* Side Menu Links */
-  .side-menu a {
-    display: block;
-    color: #fff;
-    background-color: rgba(35,49,60,1);
-    opacity: 95%;
-    padding: 1.2rem;
-    font-size: 26px;
-    border-radius: 6px;
-    max-width: 100vw;
   }
 
   .side-menu ul {
-    width: 85vw;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
+    margin-top: 1.5em;
+    text-align: unset;
+    overflow: unset;
   }
 
-  .side-menu li {
+  .side-menu li a {
     display: block;
-    padding: 0;
-    text-align: center;
+    text-align: unset;
+    text-decoration: none;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 83vw;
+    color: #fff;
+    background-color: rgba(35, 49, 60, 1);
+    opacity: 95%;
+    padding: 1.2rem 1.2rem;
+    font-size: 26px;
+    border-radius: 6px;
   }
 
   #whiteContent {
@@ -430,9 +446,9 @@ footer {
 
   .footer-links {
     margin: 0;
-    padding: 0 .1rem 4rem;
+    padding: 0 0.1rem 4rem;
     max-width: 100vw;
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: normal;
   }
 
@@ -448,7 +464,7 @@ footer {
 
   .footer-para {
     font-size: 1em;
-    margin-top: .6em;
+    margin-top: 0.6em;
     margin-left: 2%;
   }
 
@@ -466,7 +482,8 @@ footer {
 
 /* screen size for tablets */
 @media only screen and (min-width: 500px) and (max-width: 768px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 
@@ -507,7 +524,7 @@ footer {
 
   .smallglobe {
     margin-left: 2%;
-    margin-top: .4em;
+    margin-top: 0.4em;
   }
 
   .smallglobe img {
@@ -598,7 +615,7 @@ footer {
 
   .footer-para {
     font-size: 1em;
-    margin-top: .6em;
+    margin-top: 0.6em;
     margin-left: 6%;
   }
 

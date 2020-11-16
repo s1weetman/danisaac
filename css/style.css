@@ -227,6 +227,10 @@ footer {
     display: none; width: 100%;
   }
 
+  #button-href {
+    padding: 1.2px;
+  }
+
   button {
       border: none;
       background: none;
@@ -243,12 +247,12 @@ footer {
     margin-right: 5%;
     height: 0;
     width: 0;
-    z-index: 20;
+    z-index: 25;
   }
 
   img.ham-button{
       height: 3em;
-      z-index: 20;
+      z-index: 25;
   }
 
   /* Side Menu Container */
@@ -259,6 +263,10 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 3em;
+  }
+
+  .side-menu ul {
+    margin-top: 2.5em;
   }
 
   /* Side Menu Links */

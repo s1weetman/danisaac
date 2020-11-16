@@ -208,7 +208,6 @@ iframe {
   font-size: 21px;
   line-height: 1.5em;
   text-align: justify;
-
 }
 
 #familyContent {
@@ -662,5 +661,24 @@ footer {
   footer {
     padding: 0.3em;
     height: 3.5em;
+  }
+}
+
+/* screen size for small desktops */
+@media only screen and (min-width: 769px) and (max-width: 1110px) {
+/* adjust globe to top black header */
+  .smallglobe {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: -5.7em;
+    z-index: 21;
+  }
+
+  .smallglobe img {
+    height: 120px;
+  }
+
+  .smallglobe a {
+    display: inline-block !important;
   }
 }

@@ -3,6 +3,9 @@
 
 html, body {
   max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -41,8 +44,9 @@ li a:hover {
 
 main {
   position: relative;
+  display: block;
   margin: 0;
-  padding-bottom: 2.5em;
+  padding-bottom: 1.5em; /* height of footer */
   flex: 1 0 auto;
   background: rgb(2,0,36);
   background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(35,49,60,1) 57%, rgba(35,49,60,0.3603816526610645) 97%);
@@ -82,11 +86,12 @@ img.social:hover {
     position: relative;
     display: flex;
     max-width: 75vw;
-    min-height: 100vh;
+    min-height: 160vh;
     margin: 0;
     margin-left: 10%;
     margin-right: 10%;
     flex-direction: column;
+    /* padding: 0 0 10em 0; */
     z-index: 1;
 }
 
@@ -169,15 +174,12 @@ img.gammaf_button:hover {
 
 footer {
   position: absolute;
-  flex-shrink: 0;
   background-color: #000;
   text-align: center;
   padding: 2rem 1rem;
   color: #fff;
-  /* margin: 0; */
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
   z-index: 3;
 }
 

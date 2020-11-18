@@ -11,10 +11,8 @@ html, body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
   height: auto;
   flex-direction: column;
-  margin: 0;
 }
 
 a {
@@ -44,15 +42,14 @@ li a:hover {
 
 main {
   position: relative;
-  display: block;
   margin: 0;
   padding-bottom: 1.5em; /* height of footer */
   flex: 1 0 auto;
   background: rgb(2,0,36);
   background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(35,49,60,1) 57%, rgba(35,49,60,0.3603816526610645) 97%);
   background-size: auto;
+  width: 100%;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 #header {
@@ -83,16 +80,11 @@ img.social:hover {
 }
 
 .mainContent {
-    position: relative;
-    display: flex;
-    max-width: 75vw;
-    min-height: 160vh;
-    margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 1em 0 10em 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
-    /* padding: 0 0 10em 0; */
-    z-index: 1;
 }
 
 .globe {
@@ -105,19 +97,24 @@ img.social:hover {
 
 .globe img {
     height: 25em;
+    padding: 0 10%;
 }
 
 img.coachdan {
     position: absolute;
-    top: 2.3em;
+    top: 10em;
     left: 34%;
     height: 45em;
     z-index: 2;
 }
 
+#side-menu {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
 .side-menu {
-    position: absolute;
-    right: 4%;
     line-height: 1.5em;
     font-size: 1.7rem;
     font-weight: bold;
@@ -127,6 +124,9 @@ img.coachdan {
 
 .side-menu ul {
     padding: 0;
+    margin: 4em 14%;
+    text-align: left; /* Left justifies text*/
+    float: right; /* moves to right side */
     list-style: none;
 }
 
@@ -139,13 +139,12 @@ img.coachdan {
 }
 
 .lowerbuttons {
-    position: absolute;
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
-    margin-top: 35em;
+    margin-top: 14em;
     width: 100%;
-    z-index: 3;
+    z-index: 5;
 }
 
 img.wckick_button:hover {

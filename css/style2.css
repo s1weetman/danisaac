@@ -32,6 +32,12 @@ li a:hover {
   background-color: #194c99;
 }
 
+.activeMedia {
+  color: #fff;
+  background-color: #194c99;
+  padding: 0.5em;
+}
+
 main {
   position: relative;
   margin: 0;
@@ -41,6 +47,12 @@ main {
   background-size: auto;
   width: 100%;
   min-height: 100vh;
+}
+
+hr {
+  width: 90%;
+  margin-top: 2em;
+  border: 1px dashed;
 }
 
 #header {
@@ -151,7 +163,7 @@ img.social:hover {
 .tvcontainer {
   position: relative;
   display: block;
-  margin-top: 5em;
+  /* margin-top: 5em; */
   height: 32.25em;
   top: 4.1em;
   left: 20%;
@@ -223,6 +235,14 @@ iframe {
 #familyContent {
   width: 100%;
   padding: 4em 0 0 0;
+}
+
+#mediaContent {
+  width: 50%;
+  margin-top: 3em;
+  padding: 0 0 11em 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .familyContent {

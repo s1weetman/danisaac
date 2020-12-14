@@ -10,6 +10,9 @@ body {
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
   flex-direction: column;
@@ -38,10 +41,23 @@ li a:hover {
   padding: 0.5em;
 }
 
+nav {
+  padding: 1em 1em;
+  z-index: 6;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-nav {
+  z-index: inherit;
+}
+
 main {
-  position: relative;
+  /* position: relative; */
   margin: 0;
-  padding-bottom: 2.5em;
+  /* padding-bottom: 2.5em; */
   flex: 1 0 auto;
   background: rgb(255, 255, 255);
   background-size: auto;
@@ -59,7 +75,7 @@ hr {
   position: relative;
   padding: 0.9rem;
   background: #232529;
-  height: 5em;
+  height: 6em;
   -moz-box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
   -webkit-box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
   box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
@@ -70,7 +86,7 @@ hr {
   display: inline-flex;
   position: absolute;
   right: 10%;
-  margin-top: 0.2em;
+  margin-top: -0.4em;
 }
 
 img.social {
@@ -89,7 +105,7 @@ img.social:hover {
   justify-content: space-between;
   padding: 0.9rem;
   background: #163a70;
-  height: 4.4em;
+  height: 6.5em;
 }
 
 .smallglobe {
@@ -98,9 +114,6 @@ img.social:hover {
   margin-left: 10%;
   margin-top: -5.7em;
   z-index: 21;
-  /* margin-left: 10%;
-  margin-top: 0.4em;
-  z-index: 21; */
 }
 
 .smallglobe img {
@@ -109,10 +122,6 @@ img.social:hover {
 
 .smallglobe a {
   display: inline-block !important;
-}
-
-#ham-button {
-  display: none;
 }
 
 #side-menu {
@@ -131,7 +140,7 @@ img.social:hover {
 .side-menu ul {
   padding: 0;
   margin: 0;
-  margin-right: 10%;
+  /* margin-right: 10%; */
   margin-top: 0.5em;
   text-align: right;
   list-style: none;
@@ -148,25 +157,24 @@ img.social:hover {
   padding: 25px 14px;
   text-align: center;
   text-decoration: none;
-  /* float: right; */
 }
 
 .side-menu li a:hover:not(.active) {
   background-color: #194c99;
 }
 
-#whiteContent {
-  padding: 0.9rem 0 0.9em 0;
+.container-fluid {
+  padding: 0;
+}
+
+.thetv {
+  position: absolute;
   margin-top: 5em;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .tvcontainer {
   position: relative;
   display: block;
-  /* margin-top: 5em; */
   height: 32.25em;
   top: 4.1em;
   left: 20%;
@@ -313,6 +321,7 @@ footer {
   color: #fff;
   bottom: 0;
   width: 100%;
+  height: 100px;
 }
 
 /* screen size for ipads */
@@ -339,6 +348,15 @@ footer {
     max-height: 2500vh;
   }
 
+  nav {
+    padding: 1em 1em;
+    z-index: 6;
+  }
+
+  .navbar-nav {
+    z-index: inherit;
+  }
+
   #header {
     padding: 0.3rem;
     height: 3.5em;
@@ -359,73 +377,23 @@ footer {
 
   #blueheader {
     width: 100%;
-    height: 2.5em;
+    height: 4.5em;
   }
 
   .smallglobe {
-    margin-left: 2%;
-    margin-top: 0.4em;
-  }
-
-  .smallglobe img {
-    height: 120px;
-  }
-
-  #side-menu {
     display: none;
-    width: 100vw;
-  }
-
-  #button-href {
-    margin-left: 75%;
-    padding: 1.2px;
-  }
-
-  #ham-button {
-    display: block;
-    margin-left: 75%;
-    margin-top: 0.2em;
-    margin-right: 5%;
-    height: 0;
-    width: 0;
-    z-index: 20;
-  }
-
-  button#ham-button:focus {
-    outline: none;
-  }
-
-  button {
-    border: none;
-    background: none;
-  }
-
-  img.ham-button {
-    height: 3em;
-    z-index: 20;
-  }
-
-  div#side-menu.side-menu {
-    margin-left: -21em;
-    float: none;
-    line-height: 1.2em;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 3em;
   }
 
   .side-menu ul {
-    margin-top: 1.5em;
-    text-align: unset;
+    text-align: center;
     overflow: unset;
   }
 
   .side-menu li a {
-    display: block;
-    text-align: unset;
-    text-decoration: none;
-    float: none;
+    /* display: block; */
+    /* text-align: unset; */
+    /* text-decoration: none; */
+    /* float: none; */
     margin-left: auto;
     margin-right: auto;
     width: 83vw;
@@ -538,6 +506,15 @@ footer {
     max-height: 480vh;
   }
 
+  nav {
+    padding: 1em 1em;
+    z-index: 6;
+  }
+
+  .navbar-nav {
+    z-index: inherit;
+  }
+
   #header {
     padding: 0.3rem;
     height: 3.5em;
@@ -558,12 +535,13 @@ footer {
 
   #blueheader {
     max-width: 100vw;
-    height: 2.5em;
+    height: 4.5em;
   }
 
   .smallglobe {
     margin-left: 2%;
-    margin-top: 0.4em;
+    margin-top: -5.7em;
+    z-index: 21;
   }
 
   .smallglobe img {
@@ -575,27 +553,20 @@ footer {
     width: 100%;
   }
 
-  #ham-button {
+  /* Side Menu Links */
+  .side-menu a {
     display: block;
-    margin: 0;
-    z-index: 20;
-    height: 3em;
-    width: 4em;
-    margin-left: 48em;
+    color: #fff;
+    background-color: rgba(35,49,60,1);
+    opacity: 90%;
+    padding: 1.2rem;
+    font-size: 26px;
+    border-radius: 6px;
+    width: 100%;
   }
 
-  button#ham-button:focus {
-    outline: none;
-  }
-
-  button {
-    border: none;
-    background: none;
-  }
-
-  img.ham-button {
-    height: 3em;
-    z-index: inherit;
+  .side-menu li a {
+    background-color: rgba(35, 49, 60, 1);
   }
 
   #whiteContent {

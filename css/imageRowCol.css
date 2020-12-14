@@ -1,16 +1,14 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .row {
-  display: inline-flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding: 1em 0 5em 0;
-}
-
-.flexPics {
-  width: 50em;
-}
-
-.flexPics img {
-  padding: 1.18em;
-  border-radius: 10%;
-  width: 45%;
+  padding: 1.5em 0 1.5em 0;
 }

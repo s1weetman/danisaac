@@ -5,97 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style2.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/customStyle.css">
     <link rel="stylesheet" href="../css/styleGreyBody.css">
+
     <title>Dan Isaac - Pioneer</title>
 </head>
 
-<body>
-    <main>
-        <!-- Header Area -->
-        <div id="header">
-            <div id="socialicons">
-                <a href="../media/mediaTVmenu2.html">
-                    <img class="social" src="../images/social-icons/mediaYouTube_icon.png" alt="Dan Isaac Media Coverage"
-                        style="height: 61px;width: 61px;margin-top: .7em;padding-right: .7em;">
-                </a>
-                <a href="https://www.youtube.com/user/tigersgym/" target="_blank">
-                    <img class="social" src="../images/social-icons/youtube_glow.png" alt="Dan Isaac YouTube">
-                </a>
-                <a href="https://twitter.com/AIMMAA_Sheriff/" target="_blank">
-                    <img class="social" src="../images/social-icons/twitter_glow.png" alt="Dan Isaac Twitter">
-                </a>
-                <a href="https://www.instagram.com/tigersgymdan/" target="_blank">
-                    <img class="social" src="../images/social-icons/instagram_glow.png" alt="Dan Isaac Instagram">
-                </a>
-                <a href="https://www.facebook.com/danmmaisaac/" target="_blank">
-                    <img class="social" src="../images/social-icons/facebook_glow.png" alt="Dan Isaac Facebook">
-                </a>
+<body class="d-flex flex-column min-vh-100">
+    <main role="main" class="flex-shrink-0">
+        <div class="container-fluid">
+            <!-- Header Area -->
+            <div id="header">
+                <div id="socialicons">
+                    <a href="../media/mediaTVmenu1.html">
+                        <img class="social" src="../images/social-icons/mediaYouTube_icon.png" alt="Dan Isaac Media Coverage"
+                            style="height: 61px;width: 61px;margin-top: .7em;padding-right: .7em;">
+                    </a>
+                    <a href="https://www.youtube.com/user/tigersgym/" target="_blank">
+                        <img class="social" src="../images/social-icons/youtube_glow.png" alt="Dan Isaac YouTube">
+                    </a>
+                    <a href="https://twitter.com/AIMMAA_Sheriff/" target="_blank">
+                        <img class="social" src="../images/social-icons/twitter_glow.png" alt="Dan Isaac Twitter">
+                    </a>
+                    <a href="https://www.instagram.com/tigersgymdan/" target="_blank">
+                        <img class="social" src="../images/social-icons/instagram_glow.png" alt="Dan Isaac Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/danmmaisaac/" target="_blank">
+                        <img class="social" src="../images/social-icons/facebook_glow.png" alt="Dan Isaac Facebook">
+                    </a>
+                </div>
+            </div>
+            <!-- Blue Header Area with submenu -->
+            <div id="blueheader">
+                <div class="smallglobe">
+                    <a href="../indexResp.html">
+                        <img src="../images/coachdan_globe_sm120x89.png" alt="Small Globe of Dan Isaac">
+                    </a>
+                </div>
+                <!-- Sub Menu Container -->
+                <!-- Mobile Hamberger Menu Icon (Mobile Only) -->
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
+                        data-target="#collapse_target">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse side-menu" id="collapse_target">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="../familyMan/index.html" class="nav-item">Family Man</a></li>
+                            <li class="nav-item"><a href="../manOfGod/index.html" class="nav-item">Man Of God</a></li>
+                            <li class="nav-item"><a href="../martialArtist/index.html" class="nav-item">Martial
+                                    Artist</a></li>
+                            <li class="nav-item disabled"><a href="#" class="nav-item">Pioneer</a></li>
+                            <li class="nav-item"><a href="../founder/index.html" class="nav-item">Founder</a></li>
+                            <li class="nav-item"><a href="../entrepreneur/index.html">Entrepreneur</a></li>
+                            <li class="nav-item"><a href="../media/mediaTVmenu1.html" class="nav-item">Media Content</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- TV Content Area -->
+            <div class="tvcontainer">
+                <img class="tv" src="../images/coachdan_TV.png" alt="Transparent TV for video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/inAv3MkzNS0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- Main Content Area -->
+            <div class="container-fluid">
+                <div id="greyContent">
+                    <div class="pioneerContent">
+                        <p class="pInLinePioneer">Dan Isaac is widely regarded as the original forerunner and pioneer for Mixed Martial Arts 
+                            in India: he founded India's first ever mma training center for amateur and professional mma fighters in 1998, he 
+                            hosted and organized International amateur and professional mma shows when these were non-existent in the country.
+                        </p><br>
+                        <img class="pioneer-image" src="../images/pioneerPic.png" alt="Image of Dan Isaac">
+                        <p class="pInLinePioneer">He travelled across the country providing training, education and information about MMA to 
+                            Indian martial artists through seminars and workshops and this work laid the foundations for the sport becoming main-stream 
+                            in India two decades later. His seminars entitled "The Business of MMA" has helped numerous martial arts Instructors to 
+                            make the transition from traditional martial arts schools to MMA gyms.
+                        </p><br>
+                        <p class="pInLinePioneer">Dan was the prime focus of India's first MMA documentary film entitled "MMA India: Fighting for a dream" 
+                            available on YouTube. Between 2012 and 2015 Dan was first the COO and then the CEO of India's first mainstream MMA promotion 
+                            'Super Fight League' led by Sanjay Dutt and Raj Kundra.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Blue Header Area with submenu -->
-        <div id="blueheader">
-            <div class="smallglobe">
-                <a href="../indexResp.html">
-                    <img src="../images/coachdan_globe_sm120x89.png" alt="Small Globe of Dan Isaac">
-                </a>
-            </div>
-            <!-- Sub Menu Container -->
-            <!-- Mobile Hamberger Menu Icon (Mobile Only) -->
-            <a href="#" id="button-href">
-                <button type="button" onclick="toggle()" id="ham-button">
-                    <img class="ham-button" src="../images/buttons/mobileNavButton.png" alt="Hamburger Mobile Menu Button">
-                </button>
-            </a>
-            <div id="side-menu" class="side-menu">
-                <ul>
-                    <li><a href="../familyMan/index.html" class="menu_item1">Family Man</a></li>
-                    <li><a href="../manOfGod/index.html" class="menu_item2">Man Of God</a></li>
-                    <li><a href="../martialArtist/index.html" class="menu_item3">Martial Artist</a></li>
-                    <li><a href="#" class="active">Pioneer</a></li>
-                    <li><a href="../founder/index.html" class="menu_item5">Founder</a></li>
-                    <li><a href="../entrepreneur/index.html" class="menu_item6">Entrepreneur</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- TV Content Area -->
-        <div id="whiteContent" class="tvcontainer">
-            <img class="tv" src="../images/coachdan_TV.png" alt="Transparent TV for video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/inAv3MkzNS0" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <!-- Main Content Area -->
-        <div id="greyContent">
-            <div class="pioneerContent">
-                <p class="pInLinePioneer">Dan Isaac is widely regarded as the original forerunner and pioneer for Mixed Martial Arts 
-                    in India: he founded India's first ever mma training center for amateur and professional mma fighters in 1998, he 
-                    hosted and organized International amateur and professional mma shows when these were non-existent in the country.
-                </p><br>
-                <img class="pioneer-image" src="../images/pioneerPic.png" alt="Image of Dan Isaac">
-                <p class="pInLinePioneer">He travelled across the country providing training, education and information about MMA to 
-                    Indian martial artists through seminars and workshops and this work laid the foundations for the sport becoming main-stream 
-                    in India two decades later. His seminars entitled "The Business of MMA" has helped numerous martial arts Instructors to 
-                    make the transition from traditional martial arts schools to MMA gyms.
-                </p><br>
-                <p class="pInLinePioneer">Dan was the prime focus of India's first MMA documentary film entitled "MMA India: Fighting for a dream" 
-                    available on YouTube. Between 2012 and 2015 Dan was first the COO and then the CEO of India's first mainstream MMA promotion 
-                    'Super Fight League' led by Sanjay Dutt and Raj Kundra.
-                </p>
-            </div>
-        </div>
-        <!-- Footer Area -->
-        <footer id="sub-footer">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="http://www.wckickboxing.com/" target="_blank">WC Kickboxing</a></li>
-                    <li><a href="https://www.aimmaa.org/founder/" target="_blank">AIMMAA</a></li>
-                    <li><a href="http://www.gammaf.org/" target="_blank">GAMMAF</a></li>
-                </ul>
-                <p><strong>&copy; Coach Dan Isaac</strong></p>
-            </div>
-        </footer>
     </main>
-    <script src="../js/main.js"></script>
+    <!-- Footer Area -->
+    <footer class="footer mt-auto py3 sticky-bottom">
+        <div class="footer-links">
+            <ul>
+                <li><a href="http://www.wckickboxing.com/" target="_blank">WC Kickboxing</a></li>
+                <li><a href="https://www.aimmaa.org/founder/" target="_blank">AIMMAA</a></li>
+                <li><a href="http://www.gammaf.org/" target="_blank">GAMMAF</a></li>
+            </ul>
+            <p><strong>&copy; Coach Dan Isaac</strong></p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            -->
 </body>
 </html>

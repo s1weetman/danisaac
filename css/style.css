@@ -1,15 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
 
 html, body {
   max-width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
   flex-direction: column;
@@ -25,7 +27,7 @@ a:visited {
 }
 
 li a {
-  padding: 14px 12px;
+  text-decoration: none;
 }
 
 li a:visited {
@@ -40,10 +42,16 @@ li a:hover {
   color: #f3ef0c;
 }
 
+ul {
+  list-style: none;
+}
+
+ul.nav.flex-column {
+  margin: 4em 14%;
+}
+
 main {
-  position: relative;
   margin: 0;
-  padding-bottom: 1.5em; /* height of footer */
   flex: 1 0 auto;
   background: rgb(2,0,36);
   background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(35,49,60,1) 57%, rgba(35,49,60,0.3603816526610645) 97%);
@@ -52,11 +60,16 @@ main {
   min-height: 100vh;
 }
 
+main > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #header {
   position: relative;
   padding: 0.9rem;
   background: #232529;
-  height: 5em;
+  height: 6em;
   -moz-box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
   -webkit-box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
   box-shadow: 2px 7px 2px rgba(94, 112, 145, 1);
@@ -122,27 +135,11 @@ img.coachdan {
     z-index: 20;
 }
 
-.side-menu ul {
-    padding: 0;
-    margin: 4em 14%;
-    text-align: left; /* Left justifies text*/
-    float: right; /* moves to right side */
-    list-style: none;
-}
-
-.side-menu li {
-    color: #fff bold;
-}
-
-#ham-button {
-    display: none;
-}
-
 .lowerbuttons {
     position: relative;
     display: inline-flex;
     justify-content: center;
-    margin-top: 14em;
+    margin-top: 10em;
     width: 100%;
     z-index: 5;
 }

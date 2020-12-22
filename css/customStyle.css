@@ -458,7 +458,7 @@ footer {
   }
 
   iframe {
-    margin: 2.5em auto 4em auto;
+    margin: 0.5em auto 4em auto;
     border: 12px solid black;
     text-align: center;
   }
@@ -474,6 +474,12 @@ footer {
     line-height: 1.3em;
     margin-left: 2%;
     margin-right: 2%;
+  }
+
+  .pioneer-image {
+    margin: 1.5em 0 2.5em;
+    padding: 0.5em;
+    box-shadow: 10px 10px 15px grey;
   }
 
   .martial-image {
@@ -597,6 +603,12 @@ footer {
     margin-right: auto;
   }
 
+  .pioneer-image {
+    margin: 1.5em auto 2.5em auto;
+    padding: 0.5em;
+    box-shadow: 10px 10px 15px grey;
+  }
+
   p.text-wrap {
     margin-top: 1.5rem;
     width: 33em;
@@ -646,6 +658,12 @@ footer {
     float: unset;
     margin: 3.5em 0 3.5em 0;
     padding: .5em;
+  }
+
+  .pioneer-image {
+    margin: 1.5em 0 2.5em;
+    padding: 0.5em;
+    box-shadow: 10px 10px 15px grey;
   }
 
   p.text-wrap {

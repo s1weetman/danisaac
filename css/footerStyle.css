@@ -37,7 +37,48 @@ footer {
   height: 100px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* tiny devices (320px to 349px) */
+@media (min-width: 320px) and (max-width: 349px) {
+  .footer-links {
+    margin: 0;
+    padding: 0.8rem 0.1rem 4rem;
+    max-width: 100vw;
+    font-size: 0.7rem;
+    font-weight: normal;
+  }
+
+  .footer-links ul {
+    padding: 0.5em;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: rgb(78, 119, 231);
+  }
+
+  .footer-links p {
+    padding: 0.7rem;
+  }
+
+  .footer-para {
+    font-size: 1em;
+    margin-top: 0.6em;
+    margin-left: 2%;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+    margin-top: 0.8em;
+    margin-right: 6%;
+  }
+
+  footer {
+    padding: 0.6em;
+    height: 8.5em;
+  }
+}
+
+/* Small devices (between 320 and 575px) */
 @media (min-width: 350px) and (max-width: 575px) {
 
   .footer-links {

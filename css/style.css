@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
 
-html, body {
+html,
+body {
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -53,8 +54,13 @@ ul.navbar-nav.flex-column {
 main {
   margin: 0;
   flex: 1 0 auto;
-  background: rgb(2,0,36);
-  background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(35,49,60,1) 57%, rgba(35,49,60,0.3603816526610645) 97%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    152deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(35, 49, 60, 1) 57%,
+    rgba(35, 49, 60, 0.3603816526610645) 97%
+  );
   background-size: auto;
   width: 100%;
   min-height: 100vh;
@@ -83,83 +89,83 @@ main > .container-fluid {
 }
 
 img.social {
-    height: 81px;
-    width: 81px;
+  height: 81px;
+  width: 81px;
 }
 
 img.social:hover {
-    -webkit-filter: brightness(150%);
-    filter: brightness(150%);
+  -webkit-filter: brightness(150%);
+  filter: brightness(150%);
 }
 
 .mainContent {
-    padding: 1em 0 10em 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
+  padding: 1em 0 10em 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 
 .globe {
-    position: absolute;
-    display: flex;
-    margin-left: 4%;
-    margin-top: 2em;
-    z-index: 1;
+  position: absolute;
+  display: flex;
+  margin-left: 4%;
+  margin-top: 2em;
+  z-index: 1;
 }
 
 .globe img {
-    height: 25em;
-    padding: 0 10%;
+  height: 25em;
+  padding: 0 10%;
 }
 
 img.coachdan {
-    position: absolute;
-    top: 10em;
-    left: 34%;
-    height: 45em;
-    z-index: 2;
+  position: absolute;
+  top: 10em;
+  left: 34%;
+  height: 45em;
+  z-index: 2;
 }
 
 .side-menu {
-    line-height: 1.5em;
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-top: 2.5em;
-    z-index: 20;
+  line-height: 1.5em;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 2.5em;
+  z-index: 20;
 }
 
 .lowerbuttons {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    margin-top: 10em;
-    width: 100%;
-    z-index: 5;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 10em;
+  width: 100%;
+  z-index: 5;
 }
 
 img.wckick_button:hover {
-    transform: scale(1.2);
-    -webkit-filter: brightness(120%);
-    filter: brightness(120%);
-    transition-duration: 0.3s;
-    transition-property: transform;
+  transform: scale(1.2);
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 img.aimmaa_button:hover {
-    -webkit-filter: brightness(120%);
-    filter: brightness(120%);
-    transform: scale(1.2);
-    transition-duration: 0.3s;
-    transition-property: transform;
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 img.gammaf_button:hover {
-    transform: scale(1.2);
-    -webkit-filter: brightness(120%);
-    filter: brightness(120%);
-    transition-duration: 0.3s;
-    transition-property: transform;
+  transform: scale(1.2);
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 /* Bootstrap media queries */
@@ -234,7 +240,7 @@ img.gammaf_button:hover {
   .side-menu a {
     display: block;
     color: #fff;
-    background-color: rgba(35,49,60,1);
+    background-color: rgba(35, 49, 60, 1);
     opacity: 90%;
     padding: 1.5rem;
     font-size: 26px;
@@ -265,17 +271,17 @@ img.gammaf_button:hover {
   }
 
   img.wckick_button {
-    content:url("../images/buttons/wckickboxing_mobile_button.png");
+    content: url("../images/buttons/wckickboxing_mobile_button.png");
     width: 100px;
   }
 
   img.aimmaa_button {
-    content:url("../images/buttons/aimmaa_mobile_button.png");
+    content: url("../images/buttons/aimmaa_mobile_button.png");
     width: 100px;
   }
 
   img.gammaf_button {
-    content:url("../images/buttons/gammaf_mobile_button.png");
+    content: url("../images/buttons/gammaf_mobile_button.png");
     width: 100px;
   }
 }

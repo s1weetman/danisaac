@@ -31,3 +31,4 @@ jobs:
           **/.DS_Store
           **/README.md
           **/LICENSE
+          **/gimp-project/**

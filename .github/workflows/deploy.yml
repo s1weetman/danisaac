@@ -3,7 +3,7 @@ name: Deploy to cPanel via FTP
 on:
   push:
     branches:
-      - master  # or staging
+      - master  # Change to devCodex in staging workflow
 
 jobs:
   ftp-deploy:
@@ -23,9 +23,13 @@ jobs:
         server-dir: ${{ secrets.CPANEL_FTP_PATH }}
         dangerous-clean-slate: false
         exclude: |
+          **/.git/**
+          **/.github/**
           **/.git*
           **/.github*
           **/.DS_Store
           **/README.md
           **/LICENSE
-
+        exclude-glob: |
+          **/.git/**
+          **/.github/**

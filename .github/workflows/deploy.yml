@@ -22,7 +22,9 @@ jobs:
         local-dir: ./
         server-dir: ${{ secrets.CPANEL_FTP_PATH }}
         dangerous-clean-slate: false
-        protocol: ftps
+        protocol: ftp
+        passive: true
+        ftpconcurrency: 3
         exclude: |
           **/.git/**
           **/.github/**

@@ -1,26 +1,26 @@
-name: Deploy to cPanel via FTP
+name: Deploy to Staging (cPanel FTP)
 
 on:
   push:
     branches:
-      - master  # or staging
+      - devCodex  # Only run when devCodex is updated
 
 jobs:
-  ftp-deploy:
+  deploy-staging:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Deploy via FTP
+    - name: Deploy via FTP to Staging
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.CPANEL_FTP_SERVER }}
         username: ${{ secrets.CPANEL_FTP_USER }}
         password: ${{ secrets.CPANEL_FTP_PASS }}
-        local-dir: ./     # Adjust if needed
-        server-dir: ${{ secrets.CPANEL_FTP_PATH }}
+        local-dir: ./       # Root of your repo
+        server-dir: ${{ secrets.CPANEL_STAGING_PATH }}
         dangerous-clean-slate: false
         exclude: |
           **/.git*

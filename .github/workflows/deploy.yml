@@ -22,6 +22,10 @@ jobs:
         local-dir: ./
         server-dir: ${{ secrets.CPANEL_FTP_PATH }}
         dangerous-clean-slate: false
+        protocol: ftps
+        passive: true
+        retries: 3
+        timeout: 120000
         exclude: |
           **/.git/**
           **/.github/**

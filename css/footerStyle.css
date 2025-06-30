@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.5em 0 0.5em 0;
+  padding: 1em 0 0.5em 0;
 }
 
 /* Legacy pages use .footer-links instead of .footer-container */
@@ -20,7 +20,7 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 1.5em 0 0.5em 0;
+  padding: 1em 0 0.5em 0;
 }
 
 .footer-col {
@@ -99,7 +99,7 @@ footer {
   color: #fff;
   margin-top: auto;
   padding: 0 0 1em 0;
-  min-height: 120px; /* adjust as needed */
+  min-height: 80px; /* adjust as needed for a slimmer footer */
   box-sizing: border-box;
   border-top: none;
 }

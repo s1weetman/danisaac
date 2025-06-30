@@ -11,7 +11,7 @@ body {
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
   flex-direction: column;
@@ -99,7 +99,7 @@ img.social:hover {
 }
 
 .mainContent {
-  padding: 1em 0 10em 0;
+  padding: 1em 0 2em 0;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +139,7 @@ img.coachdan {
   position: relative;
   display: inline-flex;
   justify-content: center;
-  margin-top: 10em;
+  margin-top: 2em;
   width: 100%;
   z-index: 5;
 }

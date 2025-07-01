@@ -198,11 +198,13 @@ img.gammaf_button:hover {
     /* Use dynamic viewport height to avoid extra space on mobile */
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: 110vh;
   }
 
   main {
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: 110vh;
   }
 
   #header {

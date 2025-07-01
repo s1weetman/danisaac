@@ -103,6 +103,8 @@
   }
   .footer-col {
     text-align: left;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   /* Hide affiliations column to shorten mobile footer */
   .footer-container .footer-col:nth-of-type(2),

@@ -89,11 +89,26 @@
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
-    gap: 0.8em;
-    padding: calc(1em + 10px) 0 0.2em 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding: 0.5em 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding: 0.5em 0;
+  }
+  .footer-links p {
+    text-align: left;
   }
   .footer-col {
-    text-align: center;
+    text-align: left;
+  }
+  footer {
+    min-height: 50px;
   }
 }
 

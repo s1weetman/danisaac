@@ -10,6 +10,7 @@ html, body {
 body {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding-bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
@@ -59,6 +60,7 @@ main {
   background-size: auto;
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 main > .container-fluid {
@@ -266,6 +268,9 @@ iframe {
 /* tiny devices (320px to 349px) */
 @media (min-width: 320px) and (max-width: 349px) {
   main {
+    /* match viewport height on small devices */
+    min-height: 100vh;
+    min-height: 100dvh;
     min-height: 110vh;
   }
 
@@ -432,10 +437,14 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
     min-height: 110vh;
   }
 
   main {
+    min-height: 100vh;
+    min-height: 100dvh;
     min-height: 110vh;
   }
 

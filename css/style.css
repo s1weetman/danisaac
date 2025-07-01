@@ -11,6 +11,7 @@ body {
 body {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding-bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
@@ -64,6 +65,7 @@ main {
   background-size: auto;
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 main > .container-fluid {
@@ -193,11 +195,14 @@ img.gammaf_button:hover {
     background-size: cover;
     position: relative;
     padding-bottom: 0;
-    min-height: 120vh;
+    /* Use dynamic viewport height to avoid extra space on mobile */
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   main {
-    min-height: 120vh;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   #header {
@@ -221,6 +226,7 @@ img.gammaf_button:hover {
   .mainContent {
     max-width: 100vw;
     min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
   }
 

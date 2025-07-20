@@ -409,6 +409,13 @@ iframe {
     max-width: 100vw;
   }
 
+  #photo-gallery {
+    margin-top: 1rem !important;
+    padding: 1rem 0 2rem 0;
+  }
+
+
+
   #greyContent > div.col {
     padding-top: 1.5em;
   }
@@ -582,6 +589,11 @@ iframe {
     padding: 1rem 0 2rem 0;
     max-width: 100vw;
   }
+  #photo-gallery {
+    margin-top: 1rem !important;
+    padding: 1rem 0 2rem 0;
+  }
+
 
   .greyPara p {
     font-size: 15px;
@@ -770,6 +782,11 @@ iframe {
     width: 45em;
     font-size: 22px;
     text-align: justify;
+  }
+
+  #photo-gallery {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   #fourPics > div#greyContent > div.col > div.container {

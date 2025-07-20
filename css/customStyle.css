@@ -33,6 +33,19 @@ html, body {
   .gallery-thumb {
     height: 100px;
   }
+
+  #greyContent {
+    margin-top: 2em !important;
+    padding-bottom: 1rem !important;
+  }
+
+  #greyContent h1.display-4 {
+    font-size: calc(2.5rem - 4px);
+  }
+
+  #photo-gallery {
+    margin-bottom: 3rem;
+  }
 }
 
 body {

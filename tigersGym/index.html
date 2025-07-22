@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../css/footerStyle.css">
 
     <style>
-        #scheduleButton {
+        .schedule-button {
             background-color: #f05a28;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -34,7 +34,7 @@
             transition: background-color 0.3s ease;
         }
 
-        #scheduleButton:hover {
+        .schedule-button:hover {
             background-color: #32a852;
         }
 
@@ -177,9 +177,9 @@
             <div class="container-fluid">
                 <div id="greyContent" class="row" style="margin-top: 7em;">
                     <div class="col">
-                        <h1 class="display-4 text-center font-weight-bold my-4">Tigers Gym &amp; Fight Club</h1>
+                        <h1 class="display-4 text-center font-weight-bold mt-4 mb-5">Tigers Gym &amp; Fight Club</h1>
                         <div class="text-center mb-4">
-                            <button id="scheduleButton">Schedule Appointment</button>
+                            <button id="scheduleButton" class="schedule-button">Schedule Appointment</button>
                         </div>
                         <p class="text-wrap mx-auto d-block">Tigers Gym is owned and operated by Coach Dan Isaac, former undefeated world champion kickboxer (1993-1995), and Coach Tanya Isaac, a Fitness, Strength and Nutrition specialist. We focus on personal training and group classes for adults, and we have a weekly Youth boxing program. Our assistant coaches include Coach Tony, our Youth boxing Coach, and Honorary Coach Jayden, our fight team Coach.</p>
                         <p class="text-wrap mx-auto d-block">We offer daily group classes with a new combat discipline each evening. We also offer daily personal training classes that are tailored to your specific training goals. All group classes are 45 minutes or more, and all personal training sessions are 30 minutes or more. Our Youth boxing classes are for ages 8–15, and we require parents/guardians to drop off &amp; pick up or be present during their sessions. Ages 16–18 may attend adult group classes with parent/guardian consent. We must be informed in advance of any preexisting medical condition.</p>
@@ -190,6 +190,9 @@
 
 <p class="text-wrap mx-auto d-block">If you are interested in training with us, the first step is to call or text to schedule an in-person appointment at Tigers Gym. For more information, text Coach Dan at <a href="tel:3142036068">314-203-6068</a> or email <a href="mailto:tigersgym@gmail.com">tigersgym@gmail.com</a>. If you text or email, please include your first and last name, age, and the specific discipline you are interested in.</p>
                         <p class="text-wrap mx-auto d-block">Apart from our classes and training programs, Tigers Gym is a community with a mission to support and empower our city through martial arts and fellowship. We offer a weekly Bible Study for all those interested. Everyone is welcome to Tigers Gym as long as you comply with our gym policies.</p>
+                        <div class="text-center my-4">
+                            <button id="scheduleButtonBottom" class="schedule-button">Schedule Appointment</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,12 +391,14 @@
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-        const scheduleBtn = document.getElementById('scheduleButton');
+        const scheduleButtons = document.querySelectorAll('.schedule-button');
         const modal = document.getElementById('appointmentModal');
         const closeBtn = document.getElementById('closeModal');
 
-        scheduleBtn.addEventListener('click', () => {
-            modal.style.display = 'flex';
+        scheduleButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modal.style.display = 'flex';
+            });
         });
 
         closeBtn.addEventListener('click', () => {

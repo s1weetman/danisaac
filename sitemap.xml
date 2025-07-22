@@ -2,29 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danisaac.com/index.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/entrepreneur/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/familyMan/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/founder/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/manOfGod/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/martialArtist/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/pioneer/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
   <url>
     <loc>https://danisaac.com/tigersGym/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
   </url>
   <url>
     <loc>https://danisaac.com/media/mediaTVmenu1.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
   </url>
 </urlset>

@@ -323,7 +323,8 @@
                     <input type="email" name="email" placeholder="Email*" required>
                     <input type="tel" name="phone" placeholder="Phone*" required>
 
-                    <select name="program">
+                    <label for="program">Program Interest</label>
+                    <select id="program" name="program">
                         <option value="Boxing">Boxing</option>
                         <option value="Kickboxing">Kickboxing</option>
                         <option value="Muay Thai">Muay Thai</option>
@@ -333,7 +334,8 @@
                         <option value="All styles">All styles</option>
                     </select>
 
-                    <select name="format">
+                    <label for="format">Format Interest</label>
+                    <select id="format" name="format">
                         <option value="Personal Training">Personal Training</option>
                         <option value="Youth Boxing">Youth Boxing</option>
                         <option value="Adults Group Classes">Adults Group Classes</option>
@@ -341,13 +343,13 @@
 
                     <label for="background">Background Training (multi-select)</label>
                     <select id="background" name="background" multiple>
+                        <option value="Beginner">Beginner</option>
                         <option value="Boxing">Boxing</option>
                         <option value="Kickboxing">Kickboxing</option>
                         <option value="Muay Thai">Muay Thai</option>
                         <option value="Grappling">Grappling</option>
                         <option value="MMA">MMA</option>
                         <option value="Traditional Martial Arts">Traditional Martial Arts</option>
-                        <option value="Beginner">Beginner</option>
                     </select>
 
                     <textarea name="notes" placeholder="Medical Conditions or Notes"></textarea>

@@ -354,9 +354,6 @@
                     <input type="text" name="preferredTime" placeholder="Preferred Day &amp; Time">
 
                     <label><input type="checkbox" name="liability" required> I accept the Tigers Gym liability agreement</label>
-
-                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-
                     <button type="submit" id="submitAppointment">Submit</button>
                 </form>
             </div>
@@ -392,7 +389,6 @@
         });
     </script>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         const scheduleButtons = document.querySelectorAll('.schedule-button');
         const modal = document.getElementById('appointmentModal');

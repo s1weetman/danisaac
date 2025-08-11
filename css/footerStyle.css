@@ -81,7 +81,8 @@
 .footer-copyright {
   text-align: center;
   margin: 1em 0 0.5em 0;
-  font-size: 1em;
+  font-size: 12px;
+  font-weight: normal;
   color: #fff;
 }
 
